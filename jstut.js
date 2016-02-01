@@ -195,6 +195,10 @@ while (response != 3) {
     if (response == 1) {
         fight();
         response = prompt("Would thou like to: \(1\) continue playing, \(2\) make a new gladiator, or \(3\) quit?");
+        if (response < 1 || response > 3) {
+        	response = 3;
+        	alert("Invalid response. Quitting game...");
+        }
     }
     if (response == 3) {
         break;
