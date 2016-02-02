@@ -173,7 +173,7 @@ var fight = function() {
     //Judge who won
     if (npc[randomNPC].damage > player.damage) {
         player.kills++;
-        alert("Congratulations, thou hast won the fight!")
+        alert("Congratulations, thou hast won the fight! Thou hast " + player.kills + " kills thus far.");
     } else if (npc[randomNPC].damage < player.damage) {
         alert("Alas! Thou hast perished in battle!");
     } else {
